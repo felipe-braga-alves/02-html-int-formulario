@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <h1>Formulário</h1>
+
+    <h3>Formulário com GET</h3>
+
+    <form method="GET" action="index.html">
+
+        <input type="text" name="q" value="netflix">
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <br>
+    <br>
+
+    <h3>Formulário com POST</h3>
+
+    <form method="post" action="index.html">
+
+        <input type="text" name="q" value="twitter">
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <br>
+    <br>
+
+    <h3>Modelo de cadastro</h3>
+
+    <!-- Estará sendo usado o method GET neste modelo apenas para visualiação, porêm em formularios de cadastro devem se usr o method POST poi não queremos que as informações estejam presentes na url para visualização de outros, especialmente da senha -->
+
+    <form method="GET" action="index.html" enctype="multipart/form-data">
+
+        <input type="text" name="nome" placeholder="Nome" required>
+
+        <input type="text" name="sobrenome" placeholder="Sobrenome" required>
+
+        <input type="text" name="telefone-ou-email" placeholder="Telefone ou e-mail" required>
+
+        <input type="password" name="senha" placeholder="Senha" required>
+
+        <br>
+        <br>
+
+        <label>Data de nascimento</label>
+        <select name="dia">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <select name="mes">
+            <option value="jan">Jan</option>
+            <option value="fev">Fev</option>
+            <option value="mar">Mar</option>
+            <option value="abr">Abr</option>
+            <option value="mai">Mai</option>
+        </select>
+
+        <select name="ano">
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Gênero</label>
+        <br>
+        <label for="feminino">Feminino</label>
+        <input type="radio" name="genero" id="feminino" required>
+
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" id="masculino">
+
+        <label for="outro">Outro</label>
+        <input type="radio" name="genero" id="outro">
+
+        <br>
+        <br>
+
+        <input type="file">
+
+        <br>
+        <br>
+
+        <input type="submit" value="Enviar">
+
+        
+
+    </form>
+
+</body>
+</html>
